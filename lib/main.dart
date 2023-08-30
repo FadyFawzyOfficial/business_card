@@ -9,7 +9,7 @@ class BusinessCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -20,7 +20,16 @@ class BusinessCard extends StatelessWidget {
                 radius: 100,
                 backgroundImage: AssetImage('assets/images/fady.jpg'),
               ),
-            )
+            ),
+            Text(
+              'Fady Fawzy',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 32,
+                color: Colors.white,
+                fontFamily: 'Pacifico',
+              ),
+            ),
           ],
         ),
       ),
