@@ -21,6 +21,7 @@ class BusinessCard extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 101,
@@ -42,10 +43,11 @@ class BusinessCard extends StatelessWidget {
                 'SOFTWARE ENGINEER',
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.white38,
+                  color: Colors.white54,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Divider(color: Colors.white54),
               Card(
                 child: ListTile(
                   leading: Icon(
